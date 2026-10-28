@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+.venv/
+myenv/
+.env
+
+# Generated media
+*.mp4
+*.wav
+*.mp3
+*.m4a
+
+# Temporary files and assets
+bunny_temp/
+blue_monkey_temp/
+lion_ox_temp/
+silk_road_temp/
+bunny_refs/
+bunny_refs_o/
+silk_road_refs/
+
+# Model weights and caches
+.cache/
+checkpoints/
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+
+# Logs
+*.log
