@@ -1,6 +1,10 @@
-cd ~/diffusion
 
-cat > README.md <<'EOF'
+
+
+
+
+<img width="470" height="248" alt="image" src="https://github.com/user-attachments/assets/348632cb-acc3-410b-a923-e23326ea873e" />
+
 # AI Video and Audio Generation
 
 GPU-accelerated AI video generation, cinematic storytelling, and multilingual speech synthesis using PyTorch, Hugging Face Diffusers, Transformers, and Docker.
