@@ -1,0 +1,13 @@
+numpy
+Pillow
+diffusers==0.42.0
+transformers==5.15.0
+accelerate
+safetensors
+huggingface_hub
+sentencepiece
+soundfile
+protobuf
+tiktoken
+imageio
+imageio-ffmpeg

@@ -1,0 +1,28 @@
+services:
+  ai-video:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    init: true
+    volumes:
+      - ./inputs:/inputs
+      - ./outputs:/outputs
+      - huggingface-cache:/cache/huggingface
+      - torch-cache:/cache/torch
+    environment:
+      HF_HOME: /cache/huggingface
+      TORCH_HOME: /cache/torch
+      PYTHONUNBUFFERED: "1"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    shm_size: "8gb"
+
+volumes:
+  huggingface-cache:
+  torch-cache:
